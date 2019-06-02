@@ -21,6 +21,19 @@ body{
 }
 
 /*------------ Header --------- */
+.header-box{
+    height: 95vh;
+    position: relative;
+}
+.header-box::after{
+    content: '';
+    width: 94%;
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(to right bottom,#7fc6e7af,#2066b69a);
+    top:99%;
+    left: 6%;
+}
 .header{
     height: 95vh;
     background-image: linear-gradient(to right bottom,#7fc6e7af,#2066b69a), url(../img/header.jpg);
@@ -179,3 +192,5 @@ animation-timing-function: ease-out;
 .btn-animated{
     animation: moveInBottom 1.4s ease 0.5s backwards;
 }
+
+
